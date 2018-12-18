@@ -25,7 +25,7 @@ If using template files in a modman module, you must either:
 
 #### Option 1:
 
-Use a [patched](https://gist.github.com/colinmollenhour/35c0d32dd651c4c8c840/revisions) version of Mage/Core/Block/Template.php. This gist is itself a modman module so you can install it by cloning it directly or you can integrate it into your environment some other way.
+Use a [patched] version of Mage/Core/Block/Template.php. This gist is itself a modman module so you can install it by cloning it directly or you can integrate it into your environment some other way.
 
 ```
 $ modman clone template-patch https://gist.github.com/35c0d32dd651c4c8c840.git
@@ -45,18 +45,6 @@ Enable "Allow Symlinks" (found under System > Configuration > Advanced > Develop
 Windows (including cygwin) is not supported by this script, but there is a [PHP-port of
 modman](https://github.com/sitewards/modman-php) which works on Windows. I am not affiliated
 with the authors and do not provide support for the PHP port, only a link here for reference.
-
-## Installation
-
-To install Modman, you can either install the library in your user's root folder, or you can install Modman globally.
-Regardless of which option you choose, first run one of these two scripts to download the Modman repo.
-```
-bash < <(wget -q --no-check-certificate -O - https://raw.github.com/colinmollenhour/modman/master/modman-installer)
-
-or
-
-bash < <(curl -s -L https://raw.github.com/colinmollenhour/modman/master/modman-installer)
-```
 
 #### 1. Root Folder
 
@@ -85,7 +73,7 @@ and change its mode to executable.
 
 Run `modman --help` to get the basic usage summary or `modman --tutorial` to
 see a brief tutorial. For more in-depth information please see the
-[Modman Wiki](https://github.com/colinmollenhour/modman/wiki)
+[Modman Wiki]
 
 ## Version Control Systems
 
@@ -93,16 +81,7 @@ Modman currently supports subversion and git. Other VCSs could be used by
 manually checking out the source code into the proper directory and using
 the "deploy" command.
 
-## Author
-
-* Colin Mollenhour
-* http://colin.mollenhour.com/
-* [@colinmollenhour](https://twitter.com/colinmollenhour)
-* [Follow me on github!](https://github.com/colinmollenhour)
-
 ## License
-
-   Copyright 2009 Colin Mollenhour
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
